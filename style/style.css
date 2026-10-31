@@ -1,11 +1,29 @@
 :root {
   font-family: sans-serif;
+
+  /*variables*/
+  --color: black;
+  --background-color: #edfff9;
+  --border-color: #00f6a4;
+  --border: 3px solid var(--border-color);
+  --border-radius: 1rem;
+
+  /*grid*/
+  --grid-bg: #92ffdb;
+  --grid-box-shadow: #12ffb0;
+
+  /*link*/
+  --link: #001b12;
+  --link-hover: #006d49;
 }
 
 body {
   display: flex;
   flex-direction: column;
   font-family: sans;
+  color: var(--color);
+  background-color: var(--background-color);
+  text-align: left;
 }
 
 main {
@@ -15,13 +33,22 @@ main {
   flex: 1;
 }
 
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
 nav {
   display: flex;
   justify-content: start;
   align-items: center;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid black;
+  border: var(--border);
+  border-radius: var(--border-radius);
   gap: 1rem;
 }
 
@@ -44,7 +71,8 @@ footer {
   align-items: center;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid black;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 a {
@@ -75,12 +103,18 @@ a {
 }
 
 .article {
-  border: 1px solid black;
-  border-radius: 8px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   padding: 1rem;
   margin: 1rem;
 }
 
+.article a,
+nav a {
+  font-size: large;
+  font-weight: bold;
+}
+
 .article:hover {
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 15px var(--grid-box-shadow);
 }

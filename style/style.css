@@ -1,0 +1,56 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.home-picture {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: auto;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+}
